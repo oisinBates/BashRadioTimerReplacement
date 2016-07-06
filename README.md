@@ -12,9 +12,13 @@ $2: Length of time the user wishes to sleep for(in hours, up to two decimal plac
 Script Structure:
 1:Regular expressions check both paramters to ensure that they are not in violation. Script exits at this point if parameters
 don't match regexs.
+#
 2: Radio begins playing(via google-chrome web browser). Thread sleeps for the period of time specified in $1.
+#
 3: Machine suspends to ram for the length of time specified in $2(minus $1).
+#
 4: Machine boots up and plays an alarm. A random album of music is queued to play from the local drive.
+#
 5: `MySQL database updated.
 ###
 (6): A MySQL event is scheduled to generate weekly averages, which are inserted to a seperate table of averages.
