@@ -11,7 +11,9 @@ $1: Length in minutes for playing radio.
 # 
 $2: Length of time the user wishes to sleep for(in hours, up to two decimal places permitted). 
 #
+#
 Script Structure:
+#
 1:Regular expressions check both paramters to ensure that they are not in violation. Script exits at this point if parameters
 don't match regexs.
 #
