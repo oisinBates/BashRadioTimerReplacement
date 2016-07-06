@@ -5,9 +5,9 @@ but I often found myself away from home with only my laptop. Of course, there ar
 I chose Bash as it offered an opportunity to work with a scripting language which I had not been taught in college.
 
 This script plays radio and music files on a timer as part of a bedtime routine, logging user habits to a MySQL database. 
-It takes two parameters:
-$1: Length in minutes for playing radio.
-$2: Length of time the user wishes to sleep for(in hours, up to two decimal places permitted).
+It takes two parameters: #
+$1: Length in minutes for playing radio. # 
+$2: Length of time the user wishes to sleep for(in hours, up to two decimal places permitted). #
 
 Script Structure:
 1:Regular expressions check both paramters to ensure that they are not in violation. Script exits at this point if parameters
