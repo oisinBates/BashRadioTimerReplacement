@@ -61,3 +61,6 @@ done
 
 #update DB
 mysql -u root -p[mysqlPassword] -e "INSERT INTO bash_bedtime_data.bash_bedtime_data_logs(sleep_time,radio_play_length,sleep_length) VALUES(\"$bedTime\",\"$1\",\"$2\")"
+#A MySQL event is scheduled to generate weekly averages, which are inserted to a seperate table of averages.
+#As I'm running this locally and will not have a dedicated MySQL server always running, 
+#it was necessary to alter etc/mysql/my.cnf to include 'event_scheduler=on'
