@@ -23,7 +23,7 @@ don't match regexs.
 #
 4: Machine boots up and plays an alarm. A random album of music is queued to play from the local drive.
 #
-5: `MySQL database updated.
+5: MySQL database updated.
 ###
 (6): A MySQL event is scheduled to generate weekly averages, which are inserted to a seperate table of averages.
 
